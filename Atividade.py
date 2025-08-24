@@ -1,4 +1,4 @@
-# Atividde da disciplina
+# Atividde da disciplina para formativa
 aluno = {}
 nome = str(input("Digite o nome do aluno: "))
 aluno["Nome"] = nome
