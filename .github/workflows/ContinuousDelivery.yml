@@ -1,4 +1,5 @@
-name: Python Continuous Delivery
+#Continuous delivery
+name: CI PUCPR
 
 on:
   push:
@@ -6,20 +7,17 @@ on:
       - main
 
 jobs:
-  test:
+  c_delivery:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v4
-        with:
-          python-version: 3.11
-      - run: pip install -r requirements.txt
-      - run: pylint src/
-      - run: pytest tests/
+      - name: Check out repository code
+        uses: actions/checkout@v4
 
-  deploy:
-    needs: test
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - run: echo "Deploy automático aqui, só executa se o job de testes passar"
+      - name: CD (continuous delivery)
+        uses: actions/upload-artifact@v4
+        with:
+          name: teste.zip
+          path:
+            **.py
+            README.md
+
