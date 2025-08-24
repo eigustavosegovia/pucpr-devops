@@ -1,3 +1,4 @@
+# Atividde da disciplina
 aluno = {}
 nome = str(input("Digite o nome do aluno: "))
 aluno["Nome"] = nome
