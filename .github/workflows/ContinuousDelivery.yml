@@ -18,3 +18,13 @@ jobs:
           path: |
             README.md
             **.py
+
+  c_deploy:
+    runs-on: ubuntu-latest
+    needs: c_delivery
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: retornandozip
+      - name: Display structure of downloaded files
+        run: ls -R
