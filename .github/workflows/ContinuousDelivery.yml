@@ -14,7 +14,7 @@ jobs:
       - name: CD (continuous delivery)
         uses: actions/upload-artifact@v4
         with:
-          name: formativa3.zip
+          name: formativa3
           path: |
             README.md
             **.py
@@ -25,6 +25,6 @@ jobs:
     steps:
       - uses: actions/download-artifact@v4
         with:
-          name: retornandozip
+          name: formativa3
       - name: Display structure of downloaded files
         run: ls -R
