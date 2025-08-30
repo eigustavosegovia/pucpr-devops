@@ -1,6 +1,4 @@
-#Continuous Integration
-name: CI PUCPR
-
+name: CI PUCPR #Continuous Integration
 on:
   pull_request:
     branches:
