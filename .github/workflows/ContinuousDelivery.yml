@@ -1,4 +1,4 @@
-name: CD PUCPR #Continuous delivery
+name: CD PUCPR # Continuous delivery
 on:
   push:
     branches:
