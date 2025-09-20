@@ -1,8 +1,7 @@
-def avaliar_aluno():
+def avaliar_aluno(nome, media):
     aluno = {}
-    aluno["Nome"] = input("Digite o nome do aluno: ")
-    aluno["Média"] = float(input("Digite a média do aluno: "))
-
+    aluno["Nome"] = nome
+    aluno["Média"] = media
     if aluno["Média"] < 5:
         aluno["Situação"] = "Reprovado"
     elif aluno["Média"] < 7:
