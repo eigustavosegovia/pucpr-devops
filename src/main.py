@@ -10,7 +10,3 @@ def avaliar_aluno(nome, media):
         aluno["Situação"] = "Aprovado"
         
     return aluno
-
-
-# Exemplo de uso
-print(avaliar_aluno())
